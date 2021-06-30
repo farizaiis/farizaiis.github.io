@@ -44,13 +44,6 @@ body {
     margin-left: 5px;
   }   
 
-  .menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    display: none;
-  }
 
   .header-right {
     float: right;
