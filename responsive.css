@@ -1,0 +1,39 @@
+@media all and (max-width: 670px) {
+    .header-right .btn {
+        font-size: 8px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    
+    .services .service {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .header-left p {
+        display: none;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
+
+    
+
+@media all and (max-width: 1000px) {
+    .ideation {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .credential {
+        font-size: 12px;
+    }
+}
