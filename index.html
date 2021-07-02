@@ -16,6 +16,9 @@
             <img class="logo" src="pngwing.com.png">
             <p>Phoenix Organizer</p>
           </div>
+          <div class="darkmodebutton">
+            <button onclick="myFunction()">Dark Mode</button>
+          </div>
           <div class="header-right">
             <div class="btn-wrapper">
               <a href="#aboutpage" class="btn about">About</a>
@@ -125,5 +128,11 @@
           </div>
         </div>
       </footer>
+      <script>
+        function myFunction() {
+          var element = document.body;
+          element.classList.toogle("dark-mode");
+        };
+      </script>
   </body>
 </html>
