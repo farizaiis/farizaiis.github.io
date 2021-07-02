@@ -248,3 +248,8 @@ footer {
   background-color: rgb(175, 8, 8);
   padding-top: 5px;
 }
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
