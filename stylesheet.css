@@ -1,104 +1,107 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: "Lucida Grande";
-  }
+    font-family: 'Lucida Grande';
+}
 
-  a {
+a {
     text-decoration: none;
-  }
+}
 
-  .container {
+.container {
     max-width: 1170px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-  }
+}
 
-  header {
+header {
     height: 65px;
     width: 100%;
     background-color: black;
     color: white;
-    position :fixed;
+    position: fixed;
     top: 0;
     z-index: 10;
-  }
+}
 
-  .logo {
+.logo {
     width: 60px;
     margin-top: 3px;
     float: left;
-  }
+}
 
-  .header-left p {
+.header-left p {
     font-size: 20px;
     padding-right: 20px;
     float: left;
-    color:rgb(175, 8, 8);
+    color: rgb(175, 8, 8);
     font-weight: bolder;
     margin-top: 20px;
     margin-left: 5px;
-  }   
+}
 
-  .darkmodebutton {
+.darkmodebutton {
     float: left;
     margin-top: 22px;
-  }
+}
 
-  .darkmodebutton button {
+.darkmodebutton button {
     box-sizing: border-box;
     background-color: rgb(175, 8, 8);
     color: black;
     border-radius: 5px;
     font-family: 'Monument';
-  }
+}
 
-  .header-right {
+.header-right {
     float: right;
     transition: all 0.5s;
-  }
+}
 
-
-  .btn-wrapper {
+.btn-wrapper {
     margin-top: 20px;
-  }
+}
 
-  .btn {
+.btn {
     padding: 5px 5px;
     color: white;
     display: inline-block;
     border-radius: 4px;
     margin-right: 14px;
     font-size: 13px;
-  }
+}
 
-  .about:hover, .projects:hover, .clients:hover, .contact:hover, .circle:hover {
-    background-color:rgba(255, 255, 255, 0.3);
-    color:rgb(175, 8, 8);
-  }
+.about:hover,
+.projects:hover,
+.clients:hover,
+.contact:hover,
+.circle:hover {
+    background-color: white;
+    color: rgb(175, 8, 8);
+}
 
-  .top-wrapper {
+.top-wrapper {
     padding: 80px 0 80px 0;
-    background-image: url(jelang-penayangan-maleficent-mistress-of-evil-disney-menggandeng-_191010193147-187.jpg);
+    background-image: url(images/jelang-penayangan-maleficent-mistress-of-evil-disney-menggandeng-_191010193147-187.jpg);
     background-size: cover;
     color: white;
     text-align: center;
     width: 100%;
-  }
+}
 
-  .banner {
+.banner {
     background-color: rgba(0, 0, 0, 0.8);
     transition: all 0.5s;
     padding-top: 100px;
     padding-bottom: 100px;
     width: 100%;
-  }
+}
 
-  .banner h1 {
+.banner h1 {
     font-family: 'Monument Extended';
 }
 
@@ -116,7 +119,7 @@ body {
 
 .banner a:hover {
     border: 1px solid rgb(175, 8, 8);
-    color:rgb(175, 8, 8);
+    color: rgb(175, 8, 8);
 }
 
 .konten-wrapper {
@@ -138,26 +141,30 @@ body {
 .heading-konten h2 {
     font-weight: normal;
     background-color: rgb(0, 0, 0);
-    display:inline-block;
+    display: inline-block;
     padding: 5px;
     border-radius: 10px;
     color: white;
     letter-spacing: 2px;
 }
-  
+
 .service {
     float: left;
     width: 25%;
 }
 
 .service h3 {
-    background-color: rgba(255, 255, 255, 1);
-    display:inline-block;
-    padding: 5px;
+    display: inline-block;
     border-radius: 10px;
-    color: rgb(175, 8, 8);
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
 }
 
+.service h3:hover {
+    border: 1px solid black;
+    color: black;
+}
 
 .text-contents {
     width: 80%;
@@ -177,21 +184,20 @@ marquee p {
 .experience-wrapper {
     text-align: center;
     width: 100%;
-  
 }
 
 .heading-experience h2 {
-    font-weight: normal;
-    background-color: rgb(175, 8, 8);
-    display:inline-block;
+    font-weight: bolder;
+    display: inline-block;
     padding: 5px;
+    padding-bottom: 25px;
     border-radius: 10px;
-    color: black;
+    color: rgb(175, 8, 8);
     letter-spacing: 2px;
 }
 
 .experience p {
-    color:rgb(175, 8, 8);
+    color: rgb(175, 8, 8);
     font-size: 20px;
     font-weight: bolder;
 }
@@ -206,11 +212,11 @@ marquee p {
 }
 
 .experience img {
-  width: 100%;
+    width: 100%;
 }
 
 .clients img {
-  width: 90px;
+    width: 90px;
 }
 
 .contact-wrapper {
@@ -222,16 +228,18 @@ marquee p {
 }
 
 .contact-wrapper h3 {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
-input, textarea {
-    width:50%;
-    margin-top:5px;
-    margin-bottom:30px;
-    padding:5px;
-    font-size:12px;
-    border:1px solid #dee7ec;
+input,
+textarea {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 5px;
+    font-size: 12px;
+    color: black;
+    border: 1px solid #dee7ec;
 }
 
 .contact-submit {
@@ -241,30 +249,54 @@ input, textarea {
 }
 
 .contact-submit:hover {
-  color:black;
-  background-color:rgba(175, 8, 8, 1);
+    color: black;
+    background-color: rgba(175, 8, 8, 1);
 }
 
 .medsos img {
-  width: 40px;
-  float: center;
-  padding-right: 14px;
-  position: relative;
-  cursor: pointer;
+    width: 40px;
+    float: center;
+    padding-right: 14px;
+    position: relative;
+    cursor: pointer;
 }
 
 footer {
-  text-align  : center;
-  font-size: 20px;
-  font-weight: bolder;
-  padding-bottom: 10px;
-  background-color: rgb(175, 8, 8);
-  padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    background-color: rgb(175, 8, 8);
+    padding-top: 5px;
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
-  border-bottom: 2px solid rgb(175, 8, 8);
-  border-top: 2px solid rgb(175, 8, 8);
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid rgb(175, 8, 8);
+    border-top: 2px solid rgb(175, 8, 8);
+}
+
+.modal-content {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(175, 8, 8);
+    text-align: center;
+}
+
+.modal-header {
+    background-color: black;
+}
+
+.modal-header h5 {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.modal-body p {
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
 }

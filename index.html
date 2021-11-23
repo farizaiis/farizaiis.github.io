@@ -17,7 +17,7 @@
     <header>
         <div class="container">
           <div class="header-left">
-            <img class="logo" src="pngwing.com.png">
+            <img class="logo" src="images/pngwing.com.png">
             <p>Phoenix Organizer</p>
           </div>
           <div class="darkmodebutton">
@@ -39,7 +39,7 @@
             <div class="banner">
                 <h1>More than 50+ immersive virtual & hybrid experiences were executed during 2020.</h1>
                 <p>Develop interactive online events that wow your audience! You are on the right site. We provide end-to-end online events and webinars for your company. Offline events? we have 8 years of experience on it.</p>
-                <a href="email.png" class="credential" download="">DOWNLOAD PHOENIX CREDENTIAL</a>
+                <a href="images/email.png" class="credential" download="">DOWNLOAD PHOENIX CREDENTIAL</a>
             </div>
         </div>
       </div>
@@ -50,21 +50,21 @@
                 <h2>WHAT WE PROVIDE?</h2>
               </div>
               <div class="services">
-                  <div class="service" data-toggle="modal" data-target="#exampleModal">
-                      <h3>Brand Activation</h3>
-                      <p class="text-contents">We believe that engagement is the key to a successful brand activation. We put our utmost attention on how the brand can interact with its’ audience, and how we could stand out from the crowd.</p>
+                  <div class="service">
+                      <h3  data-toggle="modal" data-target="#modalBrandActivation">Brand Activation</h3>
+                      
                   </div>
                   <div class="service">
-                    <h3>Corporate Event</h3>
-                    <p class="text-contents">We know how important corporate events are, in terms of impacting the employees. That’s why we aim to create memorable and impactful events for the corporate.</p>
+                    <h3  data-toggle="modal" data-target="#modalCorporateEvent">Corporate Event</h3>
+                    
                 </div>
                 <div class="service">
-                    <h3>Special Event</h3>
-                    <p class="text-contents">Our value is to make an event as special as possible by delivering out of the out of the box ideas, and to execute it perfectly.</p>
+                    <h3  data-toggle="modal" data-target="#modalSpecialEvent">Special Event</h3>
+                    
                 </div>
                 <div class="service">
-                    <h3>Virtual Event</h3>
-                    <p class="text-contents">We aim to deliver only the best. That’s why we take various ideas and concept then turn them into an offline to online marketing in order to reach more audience.</p>
+                    <h3  data-toggle="modal" data-target="#modalVirtualEvent">Virtual Event</h3>
+                    
                 </div>
                 <div class="clear"></div>
               </div>
@@ -81,11 +81,11 @@
               </div>
               <div class="experience">
                   <p>BRI UMKM</p>
-                  <img src="briproject.png">
+                  <img src="images/briproject.png">
               </div>
               <div class="experience">
                 <p>IM3 Ooredoo Collabonation</p>
-                <img src="indosat.png">
+                <img src="images/indosat.png">
             </div>
           </div>
       </div>
@@ -96,27 +96,30 @@
                   <h2>Our Clients</h2>
               </div>
               <div class="clients">
-                <img src="clients.png">
-                <img src="clients2.png">
-                <img src="clients3.png">
-                <img src="clients4.png">
-                <img src="clients5.png">
+                <img src="images/clients.png">
+                <img src="images/clients2.png">
+                <img src="images/clients3.png">
+                <img src="images/clients4.png">
+                <img src="images/clients5.png">
               </div>
           </div>
       </div>
 
       <div class="contact-wrapper" id="contactpage">
           <div class="container">
-              <div class="contact-left">
+              
+              <form onsubmit="return onSubmit(event)">
+                <div class="contact-left">
                 <h3 class="contactsubmit">Feel free to ask us, we would be happy to fill you in.</h3>
                 <p>Email</p>
-                <input>
+                <input name="email" type="text">
                 <p>Company</p>
-                <input>
+                <input name="company" type="text">
                 <p>Message</p> 
-                <textarea></textarea>
+                <textarea name="message" type="text"></textarea>
               </div>
               <input class="contact-submit" type="submit" value="Kirim">
+            </form>
           </div>
       </div>
 
@@ -124,42 +127,67 @@
         <div class="container">
           <p class="contactus">Contact</p>
           <div class="medsos">
-            <img class="facebook" src="FACEBOOK.png">
-            <img class="instagram" src="instagram.png">
-            <img class="twitter" src="twitter.png">
-            <img class="whatsapp" src="whatsapp.png">
-            <img class="email" src="email.png">
+            <img class="facebook" src="images/FACEBOOK.png">
+            <img class="instagram" src="images/instagram.png">
+            <img class="twitter" src="images/twitter.png">
+            <img class="whatsapp" src="images/whatsapp.png">
+            <img class="email" src="images/email.png">
           </div>
         </div>
       </footer>
-
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-      </button>
-
       
-      
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modalBrandActivation" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title test" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+              <h5 class="modal-title" id="modalBrandLabel">Brand Activation</h5>
             </div>
             <div class="modal-body">
-              ...
+              <p class="text-contents">We believe that engagement is the key to a successful brand activation. We put our utmost attention on how the brand can interact with its’ audience, and how we could stand out from the crowd.</p>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalCorporateEvent" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalCorporatLabel">Brand Activation</h5>
+            </div>
+            <div class="modal-body">
+              <p class="text-contents">We know how important corporate events are, in terms of impacting the employees. That’s why we aim to create memorable and impactful events for the corporate.</p>
             </div>
           </div>
         </div>
       </div>
       
+      <div class="modal fade" id="modalSpecialEvent" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalSpecialLabel">Brand Activation</h5>
+            </div>
+            <div class="modal-body">
+              <p class="text-contents">Our value is to make an event as special as possible by delivering out of the out of the box ideas, and to execute it perfectly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalVirtualEvent" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalVirtualLabel">Brand Activation</h5>
+            </div>
+            <div class="modal-body">
+              <p class="text-contents">We aim to deliver only the best. That’s why we take various ideas and concept then turn them into an offline to online marketing in order to reach more audience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
