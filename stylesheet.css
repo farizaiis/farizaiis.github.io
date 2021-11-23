@@ -188,35 +188,42 @@ marquee p {
 
 .heading-experience h2 {
     font-weight: bolder;
+    font-size: 38px;
     display: inline-block;
     padding: 5px;
     padding-bottom: 25px;
-    border-radius: 10px;
     color: rgb(175, 8, 8);
     letter-spacing: 2px;
 }
 
 .experience p {
     color: rgb(175, 8, 8);
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
 }
 
 .client-wrapper {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: center;
     width: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 75px;
     position: relative;
     padding-top: 60px;
 }
 
-.experience img {
-    width: 100%;
+.client-container {
+    padding-top: 25px;
 }
 
-.clients img {
+.client-container img {
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
     width: 90px;
+}
+
+.experience img {
+    width: 100%;
 }
 
 .contact-wrapper {
@@ -225,10 +232,6 @@ marquee p {
     color: white;
     padding-top: 40px;
     text-align: center;
-}
-
-.contact-wrapper h3 {
-    margin-top: 40px;
 }
 
 input,
@@ -272,9 +275,18 @@ footer {
 
 .dark-mode {
     background-color: black;
+    /* border-bottom: 2px solid rgb(175, 8, 8); */
+    /* border-top: 2px solid rgb(175, 8, 8); */
+}
+
+.dark-mode h2,
+.dark-mode p {
     color: white;
-    border-bottom: 2px solid rgb(175, 8, 8);
-    border-top: 2px solid rgb(175, 8, 8);
+}
+
+.dark-mode h3:hover {
+    color: rgb(175, 8, 8);
+    border: 1px solid rgb(175, 8, 8);
 }
 
 .modal-content {
