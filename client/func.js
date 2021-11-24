@@ -24,6 +24,8 @@ function onSubmit(e) {
         message: document.querySelector('textarea[name = message]').value,
     };
 
+    let myModal = $('#modalContact');
+
     fetch('https://phoenix-organizer.herokuapp.com/v1/contact-customer/', {
         method: 'POST',
         headers: {
@@ -37,9 +39,17 @@ function onSubmit(e) {
     })
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
+            if (data.status === 'success') {
+                document.querySelector('input[name = email]').value = '';
+                document.querySelector('input[name = company]').value = '';
+                document.querySelector('textarea[name = message]').value = '';
+            }
+            myModal.find('.text-contents').text(data.message);
+            myModal.modal('show');
+
+            return data;
         })
         .catch((error) => {
-            console.log(error);
+            return error;
         });
 }
