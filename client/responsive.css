@@ -4,7 +4,7 @@
         margin-right: 5px;
         margin-top: 1px;
     }
-    
+
     .services .service {
         font-size: 12px;
         width: 100%;
@@ -14,30 +14,47 @@
         display: none;
     }
 
-    input, textarea {
+    input,
+    textarea {
         width: 100%;
     }
 
     .darkmodebutton {
         margin-left: 8px;
-      }
+    }
 
     .darkmodebutton button {
-        box-sizing: border-box;
-        background-color: rgb(175, 8, 8);
-        color: black;
-        border-radius: 5px;
+        display: inline-block;
+        /* background-color: rgb(175, 8, 8); */
+        color: rgb(175, 8, 8);
+        font-size: 10px;
+        border: 1px solid rgb(175, 8, 8);
+        border-radius: 2px;
+        padding: 4px;
         font-family: 'Monument';
-        font-size: 13px;
-      }
-}
+    }
 
-    
+    .client-container img {
+        margin: 4px;
+        background-color: white;
+        display: inline-block;
+        border-radius: 10px;
+        width: 65px;
+    }
+}
 
 @media all and (max-width: 1000px) {
     .ideation {
         font-size: 30px;
         margin-top: 20px;
+    }
+
+    .client-container img {
+        margin: 4px;
+        background-color: white;
+        display: inline-block;
+        border-radius: 10px;
+        width: 80px;
     }
 }
 
@@ -49,19 +66,79 @@
         margin-left: 8px;
     }
 
-    .darkmodebutton button {
-        box-sizing: border-box;
-        background-color: rgb(175, 8, 8);
-        color: black;
-        border-radius: 5px;
-        font-family: 'Monument';
+    .darkmodebutton h5 {
+        display: inline-block;
+        /* background-color: rgb(175, 8, 8); */
+        color: rgb(175, 8, 8);
         font-size: 10px;
-      }
+        border: 1px solid rgb(175, 8, 8);
+        border-radius: 2px;
+        padding: 4px;
+        font-family: 'Monument';
+    }
 
-      .header-right .btn {
+    .header-right .btn {
         font-size: 8px;
         margin-right: 2px;
         margin-top: 1px;
         padding: 0px;
+    }
+
+    .client-container img {
+        margin: 4px;
+        background-color: white;
+        display: inline-block;
+        border-radius: 10px;
+        width: 45px;
+    }
+}
+
+@media all and (max-width: 280px) {
+    .credential {
+        font-size: 12px;
+    }
+    .darkmodebutton {
+        margin-left: 8px;
+    }
+
+    .darkmodebutton h5 {
+        display: inline-block;
+        /* background-color: rgb(175, 8, 8); */
+        color: rgb(175, 8, 8);
+        font-size: 8px;
+        border: 1px solid rgb(175, 8, 8);
+        border-radius: 2px;
+        padding: 4px;
+        font-family: 'Monument';
+    }
+
+    .header-right .btn {
+        font-size: 8px;
+        margin-right: 2px;
+        margin-top: 1px;
+        padding: 0px;
+    }
+
+    .client-container img {
+        margin: 4px;
+        background-color: white;
+        display: inline-block;
+        border-radius: 10px;
+        width: 40px;
+    }
+}
+
+@media (width: 1024px) {
+    .service {
+        float: left;
+        width: 50%;
+    }
+
+    .client-container img {
+        margin: 4px;
+        background-color: white;
+        display: inline-block;
+        border-radius: 10px;
+        width: 80px;
     }
 }

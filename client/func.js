@@ -18,7 +18,7 @@ function myFunction() {
 function onSubmit(e) {
     e.preventDefault();
 
-    let data = {
+    let dataCust = {
         email: document.querySelector('input[name = email]').value,
         company: document.querySelector('input[name = company]').value,
         message: document.querySelector('textarea[name = message]').value,
@@ -30,9 +30,9 @@ function onSubmit(e) {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            email: data.email,
-            company: data.company,
-            message: data.message,
+            email: dataCust.email,
+            company: dataCust.company,
+            message: dataCust.message,
         }),
     })
         .then((res) => res.json())
