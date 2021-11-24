@@ -302,3 +302,9 @@ footer {
     font-weight: normal;
     font-size: 40px;
 }
+
+.modal-body h4 {
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+}
