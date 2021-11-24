@@ -133,6 +133,17 @@ module.exports = {
                 { abortEarly: false }
             );
 
+            const checkDataCust = await contactCustomer.findOne({
+                where: { id: req.params.id },
+            });
+
+            if (!checkDataCust) {
+                return res.status(400).json({
+                    status: 'failed',
+                    message: 'Data not found',
+                });
+            }
+
             if (check.error) {
                 return res.status(400).json({
                     status: 'failed',
