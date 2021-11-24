@@ -16,6 +16,7 @@ a {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+    position: center;
 }
 
 header {
@@ -41,7 +42,7 @@ header {
     color: rgb(175, 8, 8);
     font-weight: bolder;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .darkmodebutton {
@@ -108,6 +109,7 @@ header {
 .banner p {
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 25px;
 }
 
 .banner a {
@@ -139,9 +141,7 @@ header {
 }
 
 .heading-konten h2 {
-    font-weight: normal;
-    background-color: rgb(0, 0, 0);
-    display: inline-block;
+    font-weight: bolder;
     padding: 5px;
     border-radius: 10px;
     color: white;
@@ -275,6 +275,7 @@ footer {
 
 .dark-mode {
     background-color: black;
+    background-image: url(images/Twinkle\ Stars.gif);
     /* border-bottom: 2px solid rgb(175, 8, 8); */
     /* border-top: 2px solid rgb(175, 8, 8); */
 }
@@ -290,25 +291,14 @@ footer {
 }
 
 .modal-content {
-    border: 1px solid black;
+    border: 5px solid black;
     border-radius: 10px;
     background-color: rgb(175, 8, 8);
     text-align: center;
 }
 
-.modal-header {
-    background-color: black;
-}
-
-.modal-header h5 {
-    background-color: black;
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-}
-
 .modal-body p {
     color: white;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 40px;
 }
