@@ -1,5 +1,4 @@
 const { admin } = require('../models');
-require('dotenv').config();
 const Joi = require('joi');
 const { generateToken } = require('../helpers/jwt');
 const { comparePass } = require('../helpers/bcrypt');
