@@ -23,4 +23,25 @@ function onSubmit(e) {
         company: document.querySelector('input[name = company]').value,
         message: document.querySelector('textarea[name = message]').value,
     };
+
+    fetch('https://phoenix-organizer.herokuapp.com/v1/contact-customer/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            email: data.email,
+            company: data.company,
+            message: data.message,
+        }),
+    })
+        .then((res) => res.json())
+        .then((data) => {
+            // enter you logic when the fetch is successful
+            console.log(data);
+        })
+        .catch((error) => {
+            // enter your logic for when there is an error (ex. error toast)
+            console.log(error);
+        });
 }
