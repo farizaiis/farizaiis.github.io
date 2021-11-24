@@ -1,4 +1,7 @@
 function myFunction() {
+    var element = document.getElementById('darkmodeid');
+    element.classList.toggle('dark-mode');
+
     var element = document.getElementById('experiencepage');
     element.classList.toggle('dark-mode');
 

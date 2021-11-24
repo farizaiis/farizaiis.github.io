@@ -50,11 +50,25 @@ header {
     margin-top: 22px;
 }
 
-.darkmodebutton button {
-    box-sizing: border-box;
-    background-color: rgb(175, 8, 8);
-    color: black;
-    border-radius: 5px;
+.darkmodebutton h5 {
+    display: inline-block;
+    /* background-color: rgb(175, 8, 8); */
+    color: rgb(175, 8, 8);
+    font-size: 15px;
+    border: 1px solid rgb(175, 8, 8);
+    border-radius: 2px;
+    padding: 4px;
+    font-family: 'Monument';
+}
+
+.darkmodebutton h5:hover {
+    display: inline-block;
+    /* background-color: rgb(175, 8, 8); */
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 4px;
     font-family: 'Monument';
 }
 
@@ -288,6 +302,16 @@ footer {
 .dark-mode h3:hover {
     color: rgb(175, 8, 8);
     border: 1px solid rgb(175, 8, 8);
+}
+
+.dark-mode h5:hover {
+    color: rgb(175, 8, 8);
+    border: 1px solid rgb(175, 8, 8);
+}
+
+.dark-mode h5 {
+    color: white;
+    border: 1px solid white;
 }
 
 .modal-content {
