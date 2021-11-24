@@ -37,11 +37,9 @@ function onSubmit(e) {
     })
         .then((res) => res.json())
         .then((data) => {
-            // enter you logic when the fetch is successful
             console.log(data);
         })
         .catch((error) => {
-            // enter your logic for when there is an error (ex. error toast)
             console.log(error);
         });
 }
