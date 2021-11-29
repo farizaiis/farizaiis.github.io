@@ -4,8 +4,11 @@ Documentation : https://documenter.getpostman.com/view/17384187/UVJZoJVk
 
 # PHOENIX-ORGANIZER (Company Profile)
 
-### TECH STACK USED
+#### TECH STACK USED (Back End)
 ![image](https://user-images.githubusercontent.com/46044060/143915515-80c0d736-011a-4f50-8ab5-29601046b8e1.png)
+
+#### TECH STACK USED (Front End)
+![image](https://user-images.githubusercontent.com/46044060/143916655-b80b65d3-4411-40d5-b1f7-c73fdb538d29.png)
 
 #### HOW TO RUN IN LOCAL
 - After clone this repo run npm install
