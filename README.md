@@ -2,7 +2,7 @@ If u wanna try this site : https://phoenix-organizer.herokuapp.com/
 
 Documentation : https://documenter.getpostman.com/view/17384187/UVJZoJVk
 
-# PHOENIX-ORGANIZER
+# PHOENIX-ORGANIZER (Company Profile)
 
 #### HOW TO RUN IN LOCAL
 - After clone this repo run npm install
