@@ -4,6 +4,9 @@ Documentation : https://documenter.getpostman.com/view/17384187/UVJZoJVk
 
 # PHOENIX-ORGANIZER (Company Profile)
 
+### TECH STACK USED
+![image](https://user-images.githubusercontent.com/46044060/143915515-80c0d736-011a-4f50-8ab5-29601046b8e1.png)
+
 #### HOW TO RUN IN LOCAL
 - After clone this repo run npm install
 - For create database ---> npx sequelize db:create  
